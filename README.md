@@ -10,7 +10,7 @@ I'm a Software Developer who got started in IT support and Network Administratio
 
 Here's a peek at some of the technologies I enjoy working with:
 - Languages: C#, Python, JavaScript, HTML, CSS, SQL
-- Frameworks/Tools: .NET, Razor, Git, Domo, REST APIs
+- Frameworks/Tools: .NET, Razor, Git, Domo, REST APIs, MERN Stack
 - Platforms: Windows, Linux, GitHub, AWS (S3, Lightsail, Cloud9)
 - Other Skills: Network Administration, Server Maintenance, SEO Optimization
 
