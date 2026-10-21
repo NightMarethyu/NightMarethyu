@@ -14,6 +14,21 @@ Here's a peek at some of the technologies I enjoy working with:
 - Platforms: Windows, Linux, GitHub, AWS (S3, Lightsail, Cloud9)
 - Other Skills: Network Administration, Server Maintenance, SEO Optimization
 
+## Latest Project: Pick-a-Mon
+
+[![The Pick-a-Mon home screen](https://raw.githubusercontent.com/NightMarethyu/favorite-pokemon-head2head/main/docs/screenshots/home.png)](https://nightmarethyu.github.io/favorite-pokemon-head2head/)
+
+**[Play Pick-a-Mon](https://nightmarethyu.github.io/favorite-pokemon-head2head/)** · [Source code](https://github.com/NightMarethyu/favorite-pokemon-head2head)
+
+Pick-a-Mon finds your favorite Pokémon by showing you two at a time and asking which one you like more. Keep picking and it works out your final team of six, a ranking of every Pokémon you played, and which games you could catch that team in.
+
+- **Two ways to play**: a king-of-the-hill mode with a binary-search final round (about *n* × log₂ *n* picks), or a double-elimination bracket that gives every Pokémon a second chance
+- **Filters** by generation, type, and game, with a quick start for people new to Pokémon
+- **Saved games** in the browser, several at once, with JSON export and import to move them between devices
+- **Tools**: a shareable 3×3 favorites grid image, a type chart, and a Pokémon wiki
+- **Four languages**: English, Japanese, Chinese, and French, picked from the browser's settings
+- Built with **React** and **Vite**, data gathered ahead of time by a **Python** scraper so there's no backend, and deployed to GitHub Pages with **GitHub Actions**
+
 ## My Favorite Code
 
 Here are a few highlights from my repositories:
