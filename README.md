@@ -14,7 +14,22 @@ Here's a peek at some of the technologies I enjoy working with:
 - Platforms: Windows, Linux, GitHub, AWS (S3, Lightsail, Cloud9)
 - Other Skills: Network Administration, Server Maintenance, SEO Optimization
 
-## Latest Project: Pick-a-Mon
+## Latest Project: Dungeon Delver
+
+[![A dungeon on the Dungeon Delver map, with the critical path highlighted and lock icons on the doors](https://raw.githubusercontent.com/NightMarethyu/dungeon-delver/main/docs/screenshots/map-view.png)](https://nightmarethyu.github.io/dungeon-delver/)
+
+**[Try Dungeon Delver](https://nightmarethyu.github.io/dungeon-delver/)** · [Source code](https://github.com/NightMarethyu/dungeon-delver)
+
+Dungeon Delver checks whether a Zelda-style dungeon can be beaten before anyone plays it. Lay out the rooms floor by floor, lock the doors with small keys, the big key, items, puzzles, and one-way drops, and it tells you whether the goal can be reached, every way a player could softlock themselves, which rooms are optional, and the critical path.
+
+- **A solver** in plain JavaScript that floods through everything free and only branches on real choices (which door to spend a key on, whether to take a drop), searching each situation once, with a fixture test suite of hand-made dungeons
+- **A map editor** in SVG with doors in shared walls, stairs and holes between floors, and my own drawn icons, plus a graph view built on React Flow
+- **Live results and softlock playback**: the critical path and optional rooms light up as you edit, and you can step through each way a player gets stuck
+- **No backend**: saves live in the browser, and share links carry the whole dungeon compressed in the URL
+- **Undo, keyboard shortcuts, light and dark themes, and a phone layout** with touch editing
+- Built with **React** and **Vite**, tested with **Vitest**, and deployed to GitHub Pages with **GitHub Actions**
+
+## Also New: Pick-a-Mon
 
 [![The Pick-a-Mon home screen](https://raw.githubusercontent.com/NightMarethyu/favorite-pokemon-head2head/main/docs/screenshots/home.png)](https://nightmarethyu.github.io/favorite-pokemon-head2head/)
 
