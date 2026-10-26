@@ -9,12 +9,27 @@ I'm a Software Developer who got started in IT support and Network Administratio
 ## My Toolbox
 
 Here's a peek at some of the technologies I enjoy working with:
-- Languages: C#, Python, JavaScript, HTML, CSS, SQL
+- Languages: C#, Python, JavaScript, Rust, HTML, CSS, SQL
 - Frameworks/Tools: .NET, Razor, Git, Domo, REST APIs, MERN Stack
 - Platforms: Windows, Linux, GitHub, AWS (S3, Lightsail, Cloud9)
 - Other Skills: Network Administration, Server Maintenance, SEO Optimization
 
-## Latest Project: Dungeon Delver
+## Latest Project: Dungeon Elements
+
+[![Dungeon Elements with a campaign open: folders in a file tree, three tabs, and an item note shown as a form](https://nightmarethyu.github.io/images/dungeon-elements/form-view.png)](https://nightmarethyu.github.io/projects/dungeon-elements.html)
+
+**[Download v0.1.0](https://github.com/NightMarethyu/dungeon_elements/releases)** · [Source code](https://github.com/NightMarethyu/dungeon_elements) · [Case study](https://nightmarethyu.github.io/projects/dungeon-elements.html)
+
+Dungeon Elements is a local-first campaign manager for tabletop RPGs, built as a native desktop app in Rust. A campaign is just a folder, and every note is a Markdown file with YAML front matter that Obsidian and any text editor can read, so a game master's years of work never get locked inside a proprietary format or someone else's server. It's in early development, and v0.1.0 is out for Windows, Linux, and macOS.
+
+- **Typed notes**: a folder's `_type.yaml` defines the fields its notes have (text, numbers, choices, tags, `[[links]]`, checkboxes, long text), so an NPC or an item opens as a form and saves back to plain Markdown
+- **A types editor** to add, remove, and reorder the fields of every note in a folder, and per-note fields for one-off details
+- **File checks** on load that flag anything the app can't show as intended (broken front matter, a word in a number field, a choice that isn't an option) and explain it without changing a thing
+- **Safe with other apps**: files edited elsewhere reload when you switch back, and saving never silently overwrites an outside edit
+- **Custom YAML color themes**, a real menu bar with shortcuts, tabs, and a collapsible file tree
+- Built with **Rust** and **iced**, with unit-tested parsing and checks, and released as a single file for each platform, with the universal macOS app built by **GitHub Actions**
+
+## Also New: Dungeon Delver
 
 [![A dungeon on the Dungeon Delver map, with the critical path highlighted and lock icons on the doors](https://raw.githubusercontent.com/NightMarethyu/dungeon-delver/main/docs/screenshots/map-view.png)](https://nightmarethyu.github.io/dungeon-delver/)
 
