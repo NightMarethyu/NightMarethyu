@@ -16,18 +16,18 @@ Here's a peek at some of the technologies I enjoy working with:
 
 ## Latest Project: Dungeon Elements
 
-[![Dungeon Elements with a campaign open: folders in a file tree, three tabs, and an item note shown as a form](https://nightmarethyu.github.io/images/dungeon-elements/form-view.png)](https://nightmarethyu.github.io/projects/dungeon-elements.html)
+[![An NPC note in Dungeon Elements' reading view, formatted like a wiki page with a box of fields and links to other notes](https://nightmarethyu.github.io/images/dungeon-elements/reading-view.png)](https://nightmarethyu.github.io/projects/dungeon-elements.html)
 
-**[Download v0.1.0](https://github.com/NightMarethyu/dungeon_elements/releases)** · [Source code](https://github.com/NightMarethyu/dungeon_elements) · [Case study](https://nightmarethyu.github.io/projects/dungeon-elements.html)
+**[Download v0.2.0](https://github.com/NightMarethyu/dungeon_elements/releases)** · [Source code](https://github.com/NightMarethyu/dungeon_elements) · [Case study](https://nightmarethyu.github.io/projects/dungeon-elements.html)
 
-Dungeon Elements is a local-first campaign manager for tabletop RPGs, built as a native desktop app in Rust. A campaign is just a folder, and every note is a Markdown file with YAML front matter that Obsidian and any text editor can read, so a game master's years of work never get locked inside a proprietary format or someone else's server. It's in early development, and v0.1.0 is out for Windows, Linux, and macOS.
+Dungeon Elements is a local-first campaign manager and wiki for tabletop RPGs, built as a native desktop app in Rust. A campaign is just a folder, and every note is a Markdown file with YAML front matter that Obsidian and any text editor can read, so a game master's years of work never get locked inside a proprietary format or someone else's server. It's in early development, and v0.2.0 is out for Windows, Linux, and macOS.
 
-- **Typed notes**: a folder's `_type.yaml` defines the fields its notes have (text, numbers, choices, tags, `[[links]]`, checkboxes, long text), so an NPC or an item opens as a form and saves back to plain Markdown
-- **A types editor** to add, remove, and reorder the fields of every note in a folder, and per-note fields for one-off details
-- **File checks** on load that flag anything the app can't show as intended (broken front matter, a word in a number field, a choice that isn't an option) and explain it without changing a thing
-- **Safe with other apps**: files edited elsewhere reload when you switch back, and saving never silently overwrites an outside edit
-- **Custom YAML color themes**, a real menu bar with shortcuts, tabs, and a collapsible file tree
-- Built with **Rust** and **iced**, with unit-tested parsing and checks, and released as a single file for each platform, with the universal macOS app built by **GitHub Actions**
+- **Typed notes**: a folder's `_type.yaml` defines the fields its notes have, so an NPC or an item opens as a form, as Markdown, or in a **reading view** that shows it like a wiki page with an infobox, pictures, embedded notes, and syntax-colored code
+- **Links that never break**: Obsidian-style `[[links]]` with suggestions as you type, aliases, and backlinks; renaming or moving a note rewrites every link to it across the campaign, even when it's renamed in another app
+- **Safe with other apps**: a folder watcher picks up outside edits, renames, and deletes right away, and saving never silently overwrites an outside edit
+- **Checks with fixes**: notes are checked as you type for problems like broken front matter or links to renamed notes, and each problem offers fixes to pick from
+- **No Markdown needed**: a formatting toolbar, list helpers, right-click menus, and a dice roller that parses expressions like `2d6+3` and `4d6kh3`, with roll buttons on a note's fields
+- About 17,000 lines of **Rust** on **iced**, with 111 unit tests, released as a single file for each platform, with the universal macOS app built by **GitHub Actions**
 
 ## Also New: Dungeon Delver
 
